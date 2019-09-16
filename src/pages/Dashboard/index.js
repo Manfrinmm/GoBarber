@@ -49,8 +49,8 @@ export default function Dashboard() {
           )
         };
       });
-      console.tron.log("data");
-      console.tron.log(data);
+      // console.tron.log("data");
+      // console.tron.log(data);
 
       setSchedule(data);
     }
