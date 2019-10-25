@@ -36,10 +36,14 @@ export default function Dashboard() {
 
       //pega a time zone do cliente
       const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      console.log("timezone");
+      console.log(timezone);
 
       const data = range.map(hour => {
         const checkDate = setSeconds(setMinutes(setHours(date, hour), 0), 0);
         const compareDate = utcToZonedTime(checkDate, timezone);
+        console.log("compareDate");
+        console.log(compareDate);
 
         return {
           time: `${hour}:00h`,
