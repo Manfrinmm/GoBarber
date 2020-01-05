@@ -7,12 +7,18 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 export const Content = styled.div`
   width: 100%;
   max-width: 315px;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 
   form {
     display: flex;
